@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.style.css">
+ <style>
+    body {
+      background-color: #1608d6;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      direction: rtl;
+    }
+
+    .calculator {
+      background-color: #6f00b9;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #0d4b8d;
+      margin-bottom: 10px;
+    }
+
+    .display {
+      width: 99%;
+      height: 50px;
+      font-size: 20px;
+      text-align: right;
+      margin-bottom: 15px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #c27c7c;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #a74545;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #6d2f2f;
+    }
+
+    .equal {
+      grid-column: span 2;
+      background-color: #1a67b9;
+      color: rgb(228, 221, 221);
+    }
+
+    .clear {
+      grid-column: span 2;
+      background-color: #dc3545;
+      color: white;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="calculator">
+    <div class="icon"><i class="fas fa-calculator"></i></div>
+    <div class="display">0</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>÷</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>×</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>−</button>
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+      <button class="clear">مسح</button>
+    </div>
+  </div>
+</body>
+</html>
